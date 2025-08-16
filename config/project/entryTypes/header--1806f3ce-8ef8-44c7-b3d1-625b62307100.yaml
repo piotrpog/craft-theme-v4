@@ -8,49 +8,19 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2025-08-16T15:15:59+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 3d52daa4-0a4c-4581-bcc8-b7a0e5ff360a
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-08-16T15:16:59+00:00'
+            dateAdded: '2025-08-16T15:44:56+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: e53bf52b-8e8a-430f-8e63-f5da95364eb9 # field.textEmphasized
-            handle: headerText
+            fieldUid: 5f716d6c-292b-479b-9f9c-aa4321bb3fd3 # field.sectionHeader
+            handle: null
             includeInCards: false
             instructions: null
-            label: field.headerText
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 63c54e39-6ac8-4545-905f-ffd9cc8ff02c
+            uid: 4f6f3182-9ed2-43cd-aabb-ced6bf36cf63
             userCondition: null
             warning: null
             width: 100
@@ -81,7 +51,7 @@ fieldLayouts:
         uid: 9245dc85-5a3a-462c-b608-410f61ecac77
         userCondition: null
 handle: header
-hasTitleField: true
+hasTitleField: false
 icon: a
 name: block.header
 showSlugField: false

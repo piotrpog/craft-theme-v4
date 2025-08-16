@@ -1,0 +1,65 @@
+columnSuffix: null
+handle: sectionHeader
+instructions: null
+name: field.sectionHeader
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 00227940-d4a2-4377-9a3a-89febc55cf41
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Zawartość
+                    1:
+                      - uid
+                      - 42c790f5-b85b-46b3-bab0-3671a6410a28
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - headerMain
+                            2:
+                              - label
+                              - field.sectionHeaderMain
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-08-16T15:43:46+00:00'
+                            11:
+                              - uid
+                              - 227eb960-799c-4c19-977f-cb8c4333e219
+                            14:
+                              - fieldUid
+                              - e53bf52b-8e8a-430f-8e63-f5da95364eb9 # field.textEmphasized
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: inline
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

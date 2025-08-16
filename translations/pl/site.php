@@ -32,12 +32,15 @@ return [
     'field.plainTextSingleLine' => 'Tekst pojedyncza linia',
     'field.switchDisabled' => 'Przełącznik (wył.)',
 
+    'field.sectionHeader' => 'Nagłowek sekcji',
+
     // child fields
     'field.textHeader' => 'Tekst nagłówka',
     'field.colorText' => 'Kolor tekstu',
     'field.colorBackground' => 'Kolor tła',
     'field.headerText' => 'Tekst nagłówka',
     'field.richContent' => 'Zawartość tekstowa',
+    'field.sectionHeaderMain' => 'Nagłowek sekcji - główny',
 
     // assets
     'volume.localVolume' => 'Lokalne zasoby',
