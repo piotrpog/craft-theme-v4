@@ -1,0 +1,8 @@
+baseUrl: '@web'
+handle: default
+hasUrls: true
+language: en
+name: craft-theme-v4
+primary: true
+siteGroup: 3daa580c-b96b-48de-a5a6-f3e0a4f4a8e8 # craft-theme-v4
+sortOrder: 1
