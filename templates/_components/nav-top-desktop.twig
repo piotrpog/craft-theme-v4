@@ -1,7 +1,7 @@
 <nav class="nav-top-desktop">
     <ul class="nav-top-desktop__links">
         {% for link in links %}
-
+            {% if link %}
             <li class="nav-top-desktop__single">
                 {%  set active = link.url == craft.app.request.absoluteUrl %}
                 {{ tag('a', {
@@ -14,6 +14,7 @@
                     text: link.label,
                 }) }}
             </li>
+            {% endif %}
         {% endfor %}
     </ul>
 </nav>

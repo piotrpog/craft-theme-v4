@@ -1,0 +1,23 @@
+{% extends '_components/page-builder-block-layout' %}
+
+{% set blockClass = [
+    'block-richText',
+] %}
+
+{% set containerClass = [
+] %}
+
+{% block blockContent %}
+
+    <div class="block-richText__content">
+        {{ block.textContent }}
+    </div>
+
+{% endblock %}
+
+{% css %}
+.block-richText__content{
+    margin: 0px auto;
+    max-width: 800px;
+}
+{% endcss %}

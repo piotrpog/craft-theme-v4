@@ -4,6 +4,7 @@
         <div class="container menu-mobile__container">
             <ul class="menu-mobile__list">
                 {% for link in links %}
+                    {% if link %}
                     <li class="menu-mobile__single">
                         {% set delay = loop.index * 0.1 %}
                         {{ tag('a', {
@@ -18,6 +19,7 @@
                             style: 'animation-delay: '~delay~'s',
                         }) }}
                     </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
