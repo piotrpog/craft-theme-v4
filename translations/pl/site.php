@@ -24,7 +24,7 @@ return [
     'field.seoRobots' => 'SEO - Instrukcja dla robotów',
     'field.seoSuffix' => 'SEO - Końcówka tytułu',
 
-    'field.sharedContentEntries' => 'Bloki',
+    'field.sharedContentEntries' => 'Wybrane bloki',
 
     'field.blockSettings' => 'Ustawienia bloku',
     'field.number' => 'Numer',
@@ -36,6 +36,8 @@ return [
     'field.textHeader' => 'Tekst nagłówka',
     'field.colorText' => 'Kolor tekstu',
     'field.colorBackground' => 'Kolor tła',
+    'field.headerText' => 'Tekst nagłówka',
+    'field.richContent' => 'Zawartość tekstowa',
 
     // assets
     'volume.localVolume' => 'Lokalne zasoby',
@@ -59,6 +61,7 @@ return [
     // entry types - blocks
     'block.header' => 'Nagłówek',
     'block.blockSharedContent' => 'Bloki wielokrotnego użytku',
+    'block.richText' => 'Tekst',
 
     // globals
     'global.globalSeo' => 'Ustawienia SEO',
