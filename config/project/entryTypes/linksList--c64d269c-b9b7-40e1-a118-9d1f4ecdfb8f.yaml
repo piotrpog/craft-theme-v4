@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  6139843b-48e7-4600-9acb-a4dc4b347be5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:01:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a19b6737-a7d5-4b16-9fdd-3abe3c24489f # field.singleLink
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a6358c3-e79d-4700-95ab-b1beffaf7ab6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Zawartość
+        uid: 06cfef88-f328-4bb3-b199-e844bd94c8f3
+        userCondition: null
+handle: linksList
+hasTitleField: false
+icon: null
+name: entryType.linksList
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: b805633f-4704-47b2-9c3b-f4798df3e006 # entryType.sharedContentEntry
+handle: sharedContent
+maxAuthors: 1
+name: section.sharedContent
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Strona podstawowa pozycja'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c6ede03a-46df-403c-aea6-1385ad66cadc: # Wersja en
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  cf71bf77-a719-49b4-b683-65b57024486c: # Wersja pl
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

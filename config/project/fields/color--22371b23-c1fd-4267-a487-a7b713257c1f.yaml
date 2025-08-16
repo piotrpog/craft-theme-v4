@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: color
+instructions: null
+name: field.color
+searchable: false
+settings:
+  allowCustomColors: true
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#3498db'
+        -
+          - label
+          - Niebieski
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - color
+          - '#e74c3c'
+        -
+          - label
+          - Czerwony
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

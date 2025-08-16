@@ -1,12 +1,70 @@
-dateModified: 1755354671
+dateModified: 1755356961
 email:
   fromEmail: kontakt@pogorzelskiweb.pl
   fromName: craft-theme-v4
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  localFs:
+    hasUrls: true
+    name: fs.LocalFs
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
 meta:
   __names__:
+    0b8d3e9d-7490-4ac7-9a45-d66955886e6f: field.seoRobots # field.seoRobots
+    0c0233e7-0c29-42e5-b373-688e90b18535: entryType.contentPage # entryType.contentPage
+    0fa3af52-4e7c-4f71-9671-4abb4bb72dfe: field.sharedContentEntries # field.sharedContentEntries
+    01f840d2-6061-4bc6-85cb-d3ce86e96fff: volume.localVolume # volume.localVolume
+    2d61270d-ecda-45a6-ac7b-91b0295b4041: field.linksList # field.linksList
     3daa580c-b96b-48de-a5a6-f3e0a4f4a8e8: craft-theme-v4 # craft-theme-v4
-    cf71bf77-a719-49b4-b683-65b57024486c: craft-theme-v4 # craft-theme-v4
+    6bd88332-fd2c-4f42-823f-6c6b5a97194d: field.blockSettings # field.blockSettings
+    7c281045-bed4-4246-b8f5-149aa57c363c: field.distance # field.distance
+    7fdf1d4f-4a5c-42e8-9add-82f03dae574f: Simple # Simple
+    29f77412-c7d8-42d5-8cf0-464fae352713: global.navTop # global.navTop
+    30a44582-37d6-4702-9535-3397861bec07: block.blockSharedContent # block.blockSharedContent
+    53a6eb74-54b4-429b-972e-363d6fffb7aa: field.seoAltTitle # field.seoAltTitle
+    54c4c628-f9d5-482b-8447-23834295d699: Emphasized # Emphasized
+    113fa7ec-5eb7-4cf7-ac60-79a422448dc7: field.plainText # field.plainText
+    125bb969-6fcd-4a69-8b39-7ccba21f2984: section.sharedContent # section.sharedContent
+    470fde4c-a209-4f8a-bfc7-ef4ce5807a7b: field.number # field.number
+    474c918d-7b71-4d1b-90d0-99988bf69619: Standard # Standard
+    677c6894-1999-44f4-9d5c-58351a4ccd13: field.openGraphImage # field.openGraphImage
+    863a8a34-63ee-459a-a3f2-034c467f7fdb: field.seoSuffix # field.seoSuffix
+    22371b23-c1fd-4267-a487-a7b713257c1f: field.color # field.color
+    9587649f-edde-4620-b807-a5d516f8a276: field.plainTextSingleLine # field.plainTextSingleLine
+    49078135-3339-44ba-94de-5f7a183d0ac6: global.globalSeo # global.globalSeo
+    a19b6737-a7d5-4b16-9fdd-3abe3c24489f: field.singleLink # field.singleLink
+    b9ba7b60-3c9d-44f8-a006-5d74a0fc467f: field.seoDescription # field.seoDescription
+    b527451a-bf7d-4921-857f-e86593ae101a: field.pageBuilder # field.pageBuilder
+    b805633f-4704-47b2-9c3b-f4798df3e006: entryType.sharedContentEntry # entryType.sharedContentEntry
+    c6ede03a-46df-403c-aea6-1385ad66cadc: 'Wersja en' # Wersja en
+    c64d269c-b9b7-40e1-a118-9d1f4ecdfb8f: entryType.linksList # entryType.linksList
+    cedadca0-1edc-438d-949c-c5276794187f: field.imageAsset # field.imageAsset
+    cf71bf77-a719-49b4-b683-65b57024486c: 'Wersja pl' # Wersja pl
+    d4aeb89e-7a39-4c65-95e7-d7e9a7e95b6e: field.switchDisabled # field.switchDisabled
+    d7bafb98-a13a-46ce-ac18-674c7c739ef0: section.contentPage # section.contentPage
+    e53bf52b-8e8a-430f-8e63-f5da95364eb9: field.textEmphasized # field.textEmphasized
+    eded6fc3-e4c3-43f6-b8c4-98c26237394b: field.richText # field.richText
+    f53dfe55-441b-4657-88b5-2225ebfc7adb: field.showDefaultTitleSection # field.showDefaultTitleSection
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  image-toolbox:
+    edition: lite
+    enabled: true
+    schemaVersion: 1.0.0
+  seomate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  static-file-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

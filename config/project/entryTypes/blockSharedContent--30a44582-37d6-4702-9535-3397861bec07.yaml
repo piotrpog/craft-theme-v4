@@ -1,0 +1,63 @@
+color: red
+description: null
+fieldLayouts:
+  cb8a6461-dbf3-4d31-8aaf-d6c58f29fc38:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:03:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0fa3af52-4e7c-4f71-9671-4abb4bb72dfe # field.sharedContentEntries
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b63d85d-0345-46b2-a300-5f530e6ea699
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.content
+        uid: effb9776-2dfe-4bf9-b99d-814dc19eee57
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:03:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6bd88332-fd2c-4f42-823f-6c6b5a97194d # field.blockSettings
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a8677d1-783e-4725-a19a-2ff285d76224
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.settings
+        uid: 0471e2d4-dc6d-4ab4-a1fa-7cd43d5eb253
+        userCondition: null
+handle: blockSharedContent
+hasTitleField: false
+icon: heart
+name: block.blockSharedContent
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

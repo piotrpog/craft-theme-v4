@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: pageBuilder
+instructions: null
+name: field.pageBuilder
+searchable: false
+settings:
+  createButtonLabel: field.pageBuilder.add
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 30a44582-37d6-4702-9535-3397861bec07 # block.blockSharedContent
+        -
+          - group
+          - Ogólne
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

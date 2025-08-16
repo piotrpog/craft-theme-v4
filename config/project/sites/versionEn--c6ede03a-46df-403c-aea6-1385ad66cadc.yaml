@@ -1,0 +1,9 @@
+baseUrl: '@web/en'
+enabled: '1'
+handle: versionEn
+hasUrls: true
+language: en
+name: 'Wersja en'
+primary: false
+siteGroup: 3daa580c-b96b-48de-a5a6-f3e0a4f4a8e8 # craft-theme-v4
+sortOrder: 2

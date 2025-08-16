@@ -1,0 +1,77 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
+fieldLayouts:
+  b25ba104-694d-4049-a603-fd04ed924e98:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-16T14:44:52+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 7102cea2-468f-43e7-b244-32e47527f1bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-08-16T14:46:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: a73d5de6-24f6-4c30-a712-4ca72f2ce529
+            userCondition: null
+            warning: null
+            width: 100
+        name: Zawartość
+        uid: e12e18db-ef75-4d1a-8948-4ab814853b11
+        userCondition: null
+fs: localFs
+handle: localVolume
+name: volume.localVolume
+sortOrder: 1
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: transforms

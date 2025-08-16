@@ -1,0 +1,30 @@
+fieldLayouts:
+  ef2a9615-2ba3-4e3d-afb1-f9ea7981aa9a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:07:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2d61270d-ecda-45a6-ac7b-91b0295b4041 # field.linksList
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ffa8ab9e-a91f-4750-8485-2bd9e0471ab2
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.content
+        uid: 05e3669b-1157-4c70-ab65-1851a1ee49b2
+        userCondition: null
+handle: navTop
+name: global.navTop
+sortOrder: 1

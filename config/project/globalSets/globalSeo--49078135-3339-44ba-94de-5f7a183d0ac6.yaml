@@ -1,0 +1,64 @@
+fieldLayouts:
+  8f4bba9c-943d-4361-87ed-f124dd1a7726:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:08:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 863a8a34-63ee-459a-a3f2-034c467f7fdb # field.seoSuffix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5cfa4fbe-2f9a-465b-b1c1-c25abf0a26cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-16T15:08:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b9ba7b60-3c9d-44f8-a006-5d74a0fc467f # field.seoDescription
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb5ce466-75da-4e44-a236-e1237c4f5e2d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-16T15:08:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 677c6894-1999-44f4-9d5c-58351a4ccd13 # field.openGraphImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9a8ec487-dc80-44f9-a33d-c58910d53d23
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.content
+        uid: 38567374-dbf8-47a5-b5ac-d9a89841235a
+        userCondition: null
+handle: globalSeo
+name: global.globalSeo
+sortOrder: 2

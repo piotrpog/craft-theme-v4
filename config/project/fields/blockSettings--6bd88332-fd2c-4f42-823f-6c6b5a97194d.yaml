@@ -1,0 +1,276 @@
+columnSuffix: null
+handle: blockSettings
+instructions: null
+name: field.blockSettings
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - f4542083-74cc-4cba-b0f2-c68397c9bcc8
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - d1878aca-058a-413e-b65e-da755117c37e
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - colorText
+                            2:
+                              - label
+                              - field.colorText
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - fd01dfd0-b353-4bed-99bf-e209e80eb266
+                            14:
+                              - fieldUid
+                              - 22371b23-c1fd-4267-a487-a7b713257c1f # field.color
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - colorBackground
+                            2:
+                              - label
+                              - field.colorBackground
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - f5e9ba25-6bf0-437f-b8d7-022f76afa100
+                            14:
+                              - fieldUid
+                              - 22371b23-c1fd-4267-a487-a7b713257c1f # field.color
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\HorizontalRule
+                            -
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            -
+                              - uid
+                              - b21b9e6e-9e26-438a-867b-cc7f2d699076
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - paddingTopOverrideDesktop
+                            2:
+                              - label
+                              - field.paddingTopOverrideDesktop
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - 78205c32-8988-47b8-b3ed-5e14b2434e64
+                            14:
+                              - fieldUid
+                              - 7c281045-bed4-4246-b8f5-149aa57c363c # field.distance
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - paddingBottomOverrideDesktop
+                            2:
+                              - label
+                              - field.paddingBottomOverrideDesktop
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - 3d346ad3-06c0-4639-8b6d-0004e55bd039
+                            14:
+                              - fieldUid
+                              - 7c281045-bed4-4246-b8f5-149aa57c363c # field.distance
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - paddingTopOverrideMobile
+                            2:
+                              - label
+                              - field.paddingTopOverrideMobile
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - 8b508365-0985-4f9b-86a7-4e534476795f
+                            14:
+                              - fieldUid
+                              - 7c281045-bed4-4246-b8f5-149aa57c363c # field.distance
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - paddingBottomOverrideMobile
+                            2:
+                              - label
+                              - field.paddingBottomOverrideMobile
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - 68313b23-d578-45ca-bfc5-5eb8b243db11
+                            14:
+                              - fieldUid
+                              - 7c281045-bed4-4246-b8f5-149aa57c363c # field.distance
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\HorizontalRule
+                            -
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            -
+                              - uid
+                              - 34972c9f-dfdc-44fd-8f26-ac31929e21c6
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - blockHash
+                            2:
+                              - label
+                              - field.blockHash
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-08-16T14:58:06+00:00'
+                            11:
+                              - uid
+                              - 5212cb1e-1ee2-4368-a9d0-564196c707f0
+                            14:
+                              - fieldUid
+                              - 9587649f-edde-4620-b807-a5d516f8a276 # field.plainTextSingleLine
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: inline
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

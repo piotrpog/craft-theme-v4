@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 0c0233e7-0c29-42e5-b373-688e90b18535 # entryType.contentPage
+handle: contentPage
+maxAuthors: 1
+name: section.contentPage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Strona podstawowa pozycja'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  c6ede03a-46df-403c-aea6-1385ad66cadc: # Wersja en
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/content-page
+    uriFormat: '{slug}'
+  cf71bf77-a719-49b4-b683-65b57024486c: # Wersja pl
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/content-page
+    uriFormat: '{slug}'
+type: channel
