@@ -43,7 +43,6 @@
       {% if block.type != 'blockSharedContent' and block.type != 'blockDefaultContentPlaceholder' %}
 
         {{ block.render({
-          block: block,
           paddingOverrides: paddingOverrides,
         }) }}
 

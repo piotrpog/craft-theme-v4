@@ -1,7 +1,7 @@
 {% extends '_components/page-builder-block-layout' %}
 
 {% set blockClass = [
-    'example-block',
+    'block-header',
 ] %}
 
 {% set containerClass = [
@@ -9,9 +9,8 @@
 
 {% block blockContent %}
 
-    <h1>
-        {{ block.headerText }}
-    </h1>
-
+    <div class="block-header__header">
+        {{ entry.sectionHeader.render() }}
+    </div>
 
 {% endblock %}

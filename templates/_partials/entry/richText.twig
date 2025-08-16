@@ -9,8 +9,12 @@
 
 {% block blockContent %}
 
+    {{ entry.sectionHeader.render({
+        class: 'block-richText__header',
+    }) }}
+
     <div class="block-richText__content">
-        {{ block.textContent }}
+        {{ entry.textContent }}
     </div>
 
 {% endblock %}

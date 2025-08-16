@@ -1,3 +1,4 @@
+{% set block = entry %}
 {% set sectionClasses = ['content-block'] %}
 {% if blockClass is defined and blockClass is iterable %}
   {% set sectionClasses = sectionClasses|merge(blockClass) %}
@@ -39,7 +40,7 @@
   class: sectionClasses,
   data: defaultDataAttrs,
   style: styleToUse,
-  id: block['blockHash'] is defined and block.blockHash is not empty ? block.blockHash : defaultHash,
+  id: block.blockSettings['blockHash'] is defined and block.blockSettings['blockHash'] is not empty ? block.blockSettings['blockHash'] : defaultHash,
 } %}
 
   {# content outside container #}
