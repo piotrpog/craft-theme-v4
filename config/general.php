@@ -25,4 +25,7 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
+    ->enableGql(false)
+    ->sendPoweredByHeader(false)
+    ->errorTemplatePrefix('_')
 ;
