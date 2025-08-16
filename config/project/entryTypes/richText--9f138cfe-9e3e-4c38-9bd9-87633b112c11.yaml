@@ -1,0 +1,63 @@
+color: blue
+description: null
+fieldLayouts:
+  dc729959-7971-4218-8e22-f73aa058d571:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:20:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: eded6fc3-e4c3-43f6-b8c4-98c26237394b # field.richText
+            handle: textContent
+            includeInCards: false
+            instructions: null
+            label: field.richContent
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38b10432-c0ac-45b3-b2a3-ca723a1edcc6
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.content
+        uid: e6dc457b-54d7-4303-a6e8-54d6be5b95d3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-16T15:20:56+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6bd88332-fd2c-4f42-823f-6c6b5a97194d # field.blockSettings
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b070bfa-5445-44ce-be08-443f447838b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: tab.settings
+        uid: 5e3f921b-aa9b-49a7-a2aa-c4bf70763280
+        userCondition: null
+handle: richText
+hasTitleField: false
+icon: file-lines
+name: block.richText
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
