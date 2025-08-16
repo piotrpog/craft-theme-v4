@@ -2,7 +2,11 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
+    "craftcms/ckeditor": "4.10.0",
     "craftcms/cms": "^5.0.0",
+    "craftsnippets/craft-image-toolbox": "3.0.1",
+    "craftsnippets/static-file-manager": "3.1.1",
+    "vaersaagod/seomate": "3.2.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
@@ -24,5 +28,12 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
 }
