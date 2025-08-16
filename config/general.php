@@ -28,4 +28,6 @@ return GeneralConfig::create()
     ->enableGql(false)
     ->sendPoweredByHeader(false)
     ->errorTemplatePrefix('_')
+    ->limitAutoSlugsToAscii(true)
+    ->convertFilenamesToAscii(true)
 ;
