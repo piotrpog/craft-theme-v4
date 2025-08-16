@@ -1,0 +1,18 @@
+{% extends '_layouts/layout-main' %}
+
+{% block content %}
+
+    {% if entry.showDefaultTitleSection %}
+        {% set entryContentPlaceholder %}
+            {% include '_components/page-title' with {
+                title: entry.title,
+            } only %}
+        {% endset %}
+    {% endif %}
+
+    {% include '_components/page-builder' with {
+        blocks: entry.pageBuilder,
+        entryContentPlaceholder: entryContentPlaceholder ?? null,
+    } %}
+
+{% endblock %}

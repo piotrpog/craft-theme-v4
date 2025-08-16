@@ -1,0 +1,128 @@
+{% set sectionClasses = ['content-block'] %}
+{% if blockClass is defined and blockClass is iterable %}
+  {% set sectionClasses = sectionClasses|merge(blockClass) %}
+{% elseif blockClass is defined %}
+  {% set sectionClasses = sectionClasses|merge([blockClass]) %}
+{% endif %}
+
+{% set hasDefaultContainer = hasDefaultContainer ?? true %}
+
+{% set containerClasses = [] %}
+{% if hasDefaultContainer %}
+  {% set containerClasses = containerClasses|merge(['container']) %}
+{% endif %}
+{% if containerClass is defined and containerClass is iterable %}
+  {% set containerClasses = containerClasses|merge(containerClass) %}
+{% elseif containerClass is defined %}
+  {% set containerClasses = containerClasses|merge([containerClass]) %}
+{% endif %}
+
+{% set styleToUse = {
+  'background-color': block.blockSettings.colorBackground.hex ?? null,
+  'color':  block.blockSettings.colorText.hex ?? null,
+} %}
+{#{% set styleToUse = {} %}#}
+{% if blockStyle is defined %}
+  {% set styleToUse = styleToUse|merge(blockStyle) %}
+{% endif %}
+
+{% set defaultHash = defaultHash ?? null %}
+
+{% set blockDataAttrs = blockDataAttrs ?? {} %}
+{% set defaultDataAttrs = {
+  'content-block-single': true,
+  'content-block-id': block.id ?? null,
+} %}
+{% set defaultDataAttrs = defaultDataAttrs|merge(blockDataAttrs) %}
+
+{% tag 'section' with {
+  class: sectionClasses,
+  data: defaultDataAttrs,
+  style: styleToUse,
+  id: block['blockHash'] is defined and block.blockHash is not empty ? block.blockHash : defaultHash,
+} %}
+
+  {# content outside container #}
+  {% block blockOutsideContainer %}{% endblock %}
+
+  {# content in container #}
+  {% if block('blockContent') %}
+    {% tag 'div' with {
+      class: containerClasses,
+    } %}
+      {% block blockContent %}{% endblock %}
+    {% endtag %}
+  {% endif %}
+
+  {# outside container after #}
+  {% block blockOutsideContainerAfter %}{% endblock %}
+
+{% endtag %}
+
+{% css %}
+.content-block{
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+{% endcss %}
+
+{# set padding this specific block #}
+{% set paddingTopDesktop = block.blockSettings['paddingTopOverrideDesktop'] ?? null %}
+{% set paddingTopMobile = block.blockSettings['paddingTopOverrideMobile'] ?? null %}
+{% set paddingBottomDesktop = block.blockSettings['paddingBottomOverrideDesktop'] ?? null %}
+{% set paddingBottomMobile = block.blockSettings['paddingBottomOverrideMobile'] ?? null %}
+
+{# override from common content block #}
+{% if paddingOverrides['paddingTopOverrideDesktop'] is defined and paddingOverrides['paddingTopOverrideDesktop'] is numeric %}
+  {% set paddingTopDesktop = paddingOverrides['paddingTopOverrideDesktop'] %}
+{% endif %}
+{% if paddingOverrides['paddingTopOverrideMobile'] is defined and paddingOverrides['paddingTopOverrideMobile'] is numeric %}
+  {% set paddingTopMobile = paddingOverrides['paddingTopOverrideMobile'] %}
+{% endif %}
+{% if paddingOverrides['paddingBottomOverrideDesktop'] is defined and paddingOverrides['paddingBottomOverrideDesktop'] is numeric %}
+  {% set paddingBottomDesktop = paddingOverrides['paddingBottomOverrideDesktop'] %}
+{% endif %}
+{% if paddingOverrides['paddingBottomOverrideMobile'] is defined and paddingOverrides['paddingBottomOverrideMobile'] is numeric %}
+  {% set paddingBottomMobile = paddingOverrides['paddingBottomOverrideMobile'] %}
+{% endif %}
+
+{% if paddingTopDesktop is numeric %}
+  {% css %}
+  @media(min-width: 1024px){
+    [data-content-block-id="{{ block.id }}"]{
+            padding-top: {{paddingTopDesktop}}rem !important;
+        }
+    }
+    {% endcss %}
+{% endif %}
+
+{% if paddingTopMobile is numeric %}
+  {% css %}
+  @media(max-width: 1023px){
+    [data-content-block-id="{{ block.id }}"]{
+            padding-top: {{paddingTopMobile}}rem !important;
+        }
+    }
+    {% endcss %}
+{% endif %}
+
+{% if paddingBottomDesktop is numeric %}
+  {% css %}
+  @media(min-width: 1024px){
+    [data-content-block-id="{{ block.id }}"]{
+            padding-bottom: {{paddingBottomDesktop}}rem !important;
+        }
+    }
+    {% endcss %}
+{% endif %}
+
+{% if paddingBottomMobile is numeric %}
+  {% css %}
+  @media(max-width: 1023px){
+    [data-content-block-id="{{ block.id }}"]{
+            padding-bottom: {{paddingBottomMobile}}rem !important;
+        }
+    }
+    {% endcss %}
+{% endif %}

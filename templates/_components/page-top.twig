@@ -1,0 +1,63 @@
+{% set links = navTop.linksList.all() %}
+{% set links = links|map(x => x.singleLinkItem) %}
+<div class="page-top" data-page-top>
+    <div class="container page-top__container">
+
+        {# logo #}
+        <a href="{{ alias('@web') }}" class="page-top__logo">
+            LOGO
+        </a>
+
+        {# nav desktop #}
+        <div class="page-top__nav-desktop is-hidden-touch">
+            {% include '_components/nav-top-desktop' with {links: links} only %}
+        </div>
+
+        {# nav mobile #}
+        <div class="page-top__nav-mobile is-hidden-desktop">
+{#            {% include '_components/nav-top-mobile' with {links: links} only %}#}
+        </div>
+
+    </div>
+</div>
+
+{% css %}
+.page-top{
+    position: fixed;
+    z-index: 99;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    height: var(--page-top-height);
+}
+.page-top__container{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+{% endcss %}
+
+{% js %}
+// add class on scrolled down
+document.addEventListener("DOMContentLoaded", function() {
+    addClassOnScroll();
+    window.addEventListener("scroll", addClassOnScroll);
+});
+
+function addClassOnScroll() {
+    var element = document.querySelector("[data-page-top]");
+    var scrollPosition = window.scrollY;
+
+    // Adjust the threshold as needed
+    var scrollThreshold = 1
+
+    if (scrollPosition > scrollThreshold) {
+        // Add your desired class
+        element.classList.add("is-scrolled");
+    } else {
+        // Remove the class if scroll position is back to top
+        element.classList.remove("is-scrolled");
+    }
+}
+{% endjs %}

@@ -1,0 +1,124 @@
+<nav class="menu-mobile">
+
+    <div class="menu-mobile__content" data-menu-mobile-content>
+        <div class="container menu-mobile__container">
+            <ul class="menu-mobile__list">
+                {% for link in links %}
+                    <li class="menu-mobile__single">
+                        {% set delay = loop.index * 0.1 %}
+                        {{ tag('a', {
+                            href: link.url,
+                            target: link.target,
+                            text: link.label,
+                            class: [
+                                'menu-mobile__single-link',
+                                'text-mid-bold',
+                                link.active ? 'menu-mobile__single--selected',
+                            ],
+                            style: 'animation-delay: '~delay~'s',
+                        }) }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="nav-mobile__trigger">
+        <button class="hamburger hamburger--collapse" type="button" data-menu-mobile-trigger>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+
+</nav>
+
+{% js %}
+(function() {
+
+    // show hide mobile menu
+    const toggleClass = 'menu-mobile__content--visible';
+    const triggerToggleClass = 'is-active';
+    const mainBlurClass = 'menu-mobile-opened';
+    const targetSelector = '[data-menu-mobile-content]';
+    const triggerSelector = '[data-menu-mobile-trigger]';
+
+    const trigger = document.querySelector(triggerSelector);
+    trigger.addEventListener('click', function(e) {
+        trigger.classList.toggle(triggerToggleClass);
+        const targetElement = document.querySelector(targetSelector);
+        if (targetElement) {
+            targetElement.classList.toggle(toggleClass);
+        }
+        const main = document.querySelector('body');
+        if (main) {
+            main.classList.toggle(mainBlurClass);
+        }
+    });
+
+})();
+{% endjs %}
+
+{% css %}
+
+/*toggle*/
+.menu-mobile__content{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+.menu-mobile__content--visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-mobile__container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu-mobile__content{
+    position: fixed;
+    top: var(--page-top-height);
+    left: 0px;
+    height: calc(100vh - var(--page-top-height));
+    width: 100%;
+    background-color: red;
+    color: black;
+    overflow-y: auto;
+    z-index: 999;
+}
+.menu-mobile__single:not(:last-child){
+    margin-bottom: 2rem;
+
+}
+.menu-mobile__single a{
+    padding-bottom: 2rem;
+}
+.menu-mobile__single-link{
+    left: -12rem;
+    opacity: 0;
+    color: var(--white);
+}
+.menu-mobile__list{
+    width: 100%;
+}
+@keyframes slideIn {
+    0% {
+        left: -12rem;
+        opacity: 0;
+    }
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+.menu-mobile__content--visible .menu-mobile__single-link{
+    display: inline-block;
+    position: relative;
+    animation: slideIn 0.3s linear 1;
+    animation-fill-mode: forwards;
+}
+.menu-mobile__single--selected{
+    text-decoration: underline;
+}
+{% endcss %}

@@ -1,0 +1,9 @@
+{% extends '_layouts/layout-main' %}
+
+{% set bodyClass = 'page-404' %}
+
+{% block content %}
+    {% include '_components/page-title' with {
+        title: 'header.notFound'|t,
+    } only %}
+{% endblock %}

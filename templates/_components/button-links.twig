@@ -1,0 +1,20 @@
+{% if links ?? [] %}
+    <div class="button-links {{ class ?? null }}">
+        {% for single in links %}
+            <div class="button-links__single">
+            {{ tag('a', {
+                href: single.linkField.value,
+                text: single.linkField.label,
+                target: single.linkField.target,
+                class: [
+                    'button-links__link',
+                ],
+                style: {
+                    'color': single.textColor.color ?? null,
+                    'background-color': single.backgroundColor.color ?? null,
+                }
+            }) }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}

@@ -1,0 +1,38 @@
+{# v5 #}
+{% if currentUser and currentUser.can('accessCp') and not craft.app.request.isLivePreview %}
+    {% if _globals.get('currentElement') %}
+        {% set element = _globals.get('currentElement') %}
+    {% else %}
+        {% set element = craft.app.urlManager.matchedElement %}
+    {% endif %}
+    {% if element and element.canSave(currentUser) and element.getCpEditUrl() is not null %}
+        {% set editLink = element.getCpEditUrl() %}
+        {% set editText = 'edit'|t %}
+    {% else %}
+        {% set editLink = cpUrl() %}
+        {% set editText = 'control panel'|t %}
+    {% endif %}
+    {% tag 'aside' with {
+        style: {
+            'position': 'fixed',
+            'bottom': '6rem',
+            'right': '1rem',
+            'z-index': 9999
+        },
+    } %}
+        {% tag 'a' with {
+            href: editLink,
+            target: '_blank',
+            class: 'quick-edit__link',
+            style: {
+                'padding': '0.3rem 0.6rem',
+                'background-color': 'white',
+                'display': 'inline-block',
+                'box-shadow': '5px 5px 30px 0px rgb(171, 173, 202)',
+                'border-radius': '3px'
+            }
+        } %}
+            {{ editText }}
+        {% endtag %}
+    {% endtag %}
+{% endif %}

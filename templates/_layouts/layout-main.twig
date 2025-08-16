@@ -1,0 +1,48 @@
+{% extends '_layouts/base' %}
+
+{% block layout %}
+<div class="l-external-container">
+    <div class="l-main">
+        <div class="l-outside-footer">
+            {% include "_components/page-top" %}
+            {% set pageBuilderToTop = craft.app.urlManager.matchedElement['pageBuilderToTop'] ?? false %}
+            <div class="l-main-content {% if not pageBuilderToTop %}page-top__below{% endif %}">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <div class="l-footer-fixed">
+
+            {% block footer %}{% endblock %}
+            {% include "_components/page-footer" %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% css %}
+:root{
+    --external-container-width: 2100px;
+    --external-container-background: white;
+    --main-background: white;
+}
+.l-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*background-color:var(--main-background);*/
+}
+.l-outside-footer{
+    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+}
+.l-external-container{
+    max-width: var(--external-container-width);
+    /*background-color: var(--external-container-background);*/
+    margin: 0px auto;
+}
+.page-top__below{
+    margin-top: var(--page-top-height);
+}
+{% endcss %}

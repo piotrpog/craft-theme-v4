@@ -1,0 +1,85 @@
+{% set entryContentPlaceholder = entryContentPlaceholder ?? null %}
+{% set showDefaultContent = showDefaultContent ?? true %}
+
+{% if blocks or entryContentPlaceholder %}
+  <div class="page-builder">
+
+    {# default content if content placeholder block was not used #}
+    {% if
+      blocks|filter(x => x.type == 'blockDefaultContentPlaceholder') is empty and
+      entryContentPlaceholder and
+      showDefaultContent
+    %}
+      {% set initial = [
+        {
+          type: 'blockDefaultContentPlaceholder',
+        }
+      ] %}
+      {% set blocks = initial|merge(blocks) %}
+    {% endif %}
+
+    {% for block in blocks %}
+
+      {# default options #}
+      {% set hasContainer = true %}
+
+      {# padding - shared blocks, parent block use padding top for children first block and bottom for children last block #}
+      {% set paddingOverrides = {} %}
+      {% if paddingOverridesBlock is defined %}
+        {% if loop.first %}
+          {% set paddingOverrides = {
+            paddingTopOverrideDesktop: paddingOverridesBlock.blockSettings['paddingTopOverrideDesktop'],
+            paddingTopOverrideMobile: paddingOverridesBlock.blockSettings['paddingTopOverrideMobile'],
+          } %}
+        {% endif %}
+        {% if loop.last %}
+          {% set paddingOverrides = {
+            paddingBottomOverrideDesktop: paddingOverridesBlock.blockSettings['paddingBottomOverrideDesktop'],
+            paddingBottomOverrideMobile: paddingOverridesBlock.blockSettings['paddingBottomOverrideMobile'],
+          } %}
+        {% endif %}
+      {% endif %}
+
+      {% if block.type != 'blockSharedContent' and block.type != 'blockDefaultContentPlaceholder' %}
+
+        {{ block.render({
+          block: block,
+          paddingOverrides: paddingOverrides,
+        }) }}
+
+      {% endif %}
+
+      {% switch block.type %}
+
+        {# Block default content placeholder #}
+      {% case 'blockDefaultContentPlaceholder' %}
+        {% if showDefaultContent %}
+          {% set hasContainer = false %}
+          {% embed '_components/page-builder-block-layout' %}
+
+            {% block blockOutsideContainerAfter %}
+              {{ entryContentPlaceholder ?? null }}
+            {% endblock %}
+
+          {% endembed %}
+        {% endif %}
+
+        {# common sections #}
+      {% case 'blockSharedContent' %}
+        {% set sharedContentEntries = block.sharedContentEntries.anyStatus().all() %}
+        {% set sharedBlocks = [] %}
+        {% for sharedSingle in sharedContentEntries %}
+          {% set sharedBlocks = sharedBlocks|merge(sharedSingle.pageBuilder.all()) %}
+        {% endfor %}
+        {% if sharedBlocks is not empty %}
+          {% include '_components/page-builder' with {
+            blocks: sharedBlocks,
+            paddingOverridesBlock: block,
+          } only %}
+        {% endif %}
+
+      {% endswitch %}
+
+    {% endfor %}
+  </div>
+{% endif %}

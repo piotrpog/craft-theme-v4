@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+{% set htmlAttr = {
+	lang: currentSite.language,
+	dir: craft.app.i18n.getLocaleById(currentSite.id).getOrientation(),
+} %}
+
+<html {{attr(htmlAttr)}}>
+<head>
+
+{#<!-- Template created by Piotr Pogorzelski - craftsnippets.com -->#}
+<!-- Strona stworzona przez: Piotr Pogorzelski - pogorzelskiweb.pl -->
+{% hook 'seomateMeta' %}
+
+{% include '_system/meta' %}
+{% do craft.staticFileManager.outputFiles() %}
+
+</head>
+
+{% set bodyAttr = {
+	class: [
+		bodyClass ?? null,
+		craft.app.request.isMobileBrowser() ? 'is-mobile' : 'is-desktop',
+	]
+} %}
+
+<body {{attr(bodyAttr)}}>
+{% include '_components/quick-edit' %}
+{% block layout %}{% endblock %}
+</body>
+</html>

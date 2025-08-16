@@ -1,0 +1,14 @@
+{% set image = entry.imageFile.one() %}
+{% if image %}
+    <figure class="image-with-caption">
+        {{ craft.images.pictureMultiple([{
+            asset: image,
+            class: 'image-with-caption__image',
+        }]) }}
+        {% if entry.imageCaption %}
+            <figcaption class="image-with-caption__caption">
+                {{ entry.imageCaption|nl2br }}
+            </figcaption>
+        {% endif %}
+    </figure>
+{% endif %}
