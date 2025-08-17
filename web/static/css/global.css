@@ -1,0 +1,11 @@
+:root{
+    --page-top-height: 6rem;
+    --external-container-width: 2100px;
+}
+
+/*website scale*/
+@media(max-width: 1600px) and (min-width: 1024px){
+    html{
+        font-size: 80%;
+    }
+}

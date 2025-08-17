@@ -1,0 +1,78 @@
+:root{
+    --mobile-container: 600px;
+}
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    /*position: relative;*/
+    width: auto;
+}
+
+.container:not(.touch-full-width){
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 1023px){
+    .container:not(.touch-full-width){
+        max-width: var(--mobile-container);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        /*max-width: 960px;*/
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+/*@media screen and (max-width: 1215px) {*/
+/*    .container.is-widescreen:not(.is-max-desktop) {*/
+/*        max-width: 1152px;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1407px) {
+    .container.is-fullhd:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 1344px;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+    .container:not(.is-max-desktop) {
+        max-width: 1152px;
+    }
+}
+
+@media screen and (min-width: 1408px) {
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 1344px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .container {
+        max-width: 800px;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container.full-width-desktop {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container.full-width-mobile {
+        width: 100% !important;
+        max-width: 100% !important;
+        /*padding-left: 0rem !important;*/
+        /*padding-right: 0rem !important;*/
+    }
+}
