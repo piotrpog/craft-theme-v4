@@ -9,8 +9,8 @@
 
 {% block blockContent %}
 
-    <div class="block-header__header">
-        {{ entry.sectionHeader.render() }}
-    </div>
+{{ entry.sectionHeader.render({
+    class: 'block-header__header',
+}) }}
 
 {% endblock %}
