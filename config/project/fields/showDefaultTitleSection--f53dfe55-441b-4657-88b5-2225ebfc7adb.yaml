@@ -4,7 +4,7 @@ instructions: null
 name: field.showDefaultTitleSection
 searchable: false
 settings:
-  default: false
+  default: true
   offLabel: null
   onLabel: null
 translationKeyFormat: null

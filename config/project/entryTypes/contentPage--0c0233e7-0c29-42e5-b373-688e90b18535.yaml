@@ -95,6 +95,23 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-08-23T21:20:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b9ba7b60-3c9d-44f8-a006-5d74a0fc467f # field.seoDescription
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d904f92a-ce23-4132-a9c0-3e6c56b9e130
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-08-16T15:05:41+00:00'
             editCondition: null
             elementCondition: null
