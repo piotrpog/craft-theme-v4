@@ -1,0 +1,56 @@
+columnSuffix: null
+handle: linkButton
+instructions: null
+name: 'Link button'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - dcc40827-b836-4458-8d63-bfbdf87f6ea0
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - a21c0452-1766-4753-b440-517409aad386
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-18T21:23:07+00:00'
+                            11:
+                              - uid
+                              - dd4097b8-ccd9-45e6-a6de-befdb809660a
+                            14:
+                              - fieldUid
+                              - a19b6737-a7d5-4b16-9fdd-3abe3c24489f # field.singleLink
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

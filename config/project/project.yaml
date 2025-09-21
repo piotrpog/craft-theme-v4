@@ -1,4 +1,4 @@
-dateModified: 1755984052
+dateModified: 1758230632
 email:
   fromEmail: kontakt@pogorzelskiweb.pl
   fromName: craft-theme-v4
@@ -49,6 +49,7 @@ meta:
     d4aeb89e-7a39-4c65-95e7-d7e9a7e95b6e: field.switchDisabled # field.switchDisabled
     d7bafb98-a13a-46ce-ac18-674c7c739ef0: section.contentPage # section.contentPage
     e53bf52b-8e8a-430f-8e63-f5da95364eb9: field.textEmphasized # field.textEmphasized
+    e3290823-c8a2-4170-9c48-d7f1aababe66: 'Link button' # Link button
     eded6fc3-e4c3-43f6-b8c4-98c26237394b: field.richText # field.richText
     f53dfe55-441b-4657-88b5-2225ebfc7adb: field.showDefaultTitleSection # field.showDefaultTitleSection
 plugins:

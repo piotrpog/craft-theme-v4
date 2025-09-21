@@ -12,7 +12,7 @@ settings:
   branchLimit: null
   defaultPlacement: end
   defaultUploadLocationSource: 'volume:01f840d2-6061-4bc6-85cb-d3ce86e96fff' # volume.localVolume
-  defaultUploadLocationSubpath: '{owner.slug ?? owner.owner.slug ?? owner.owner.owner.slug}'
+  defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -25,7 +25,7 @@ settings:
   selectionLabel: null
   showCardsInGrid: false
   showSearchInput: true
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'
