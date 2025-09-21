@@ -1,0 +1,1 @@
+composer require craftcms/ckeditor craftsnippets/craft-image-toolbox craftsnippets/static-file-manager vaersaagod/seomate

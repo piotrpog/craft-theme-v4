@@ -1,5 +1,13 @@
 {% extends '_layouts/layout-main' %}
 
+{% if entry.slug == "__home__" %}
+    {% set seomate = {
+        config: {
+            includeSitenameInTitle: false,
+        },
+    } %}
+{% endif %}
+
 {% block content %}
 
     {% if entry.showDefaultTitleSection %}

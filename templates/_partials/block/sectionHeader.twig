@@ -1,7 +1,7 @@
 {% if block.headerMain %}
-    <div class="sectionHeader {{ class ?? null }}">
-        <h2 class="sectionHeader__main">
-            {{ block.headerMain }}
-        </h2>
-    </div>
+    {% include '_components/section-header' with {
+        headerMain: block.headerMain,
+        class: class ?? null,
+        headerTag: block.headerIsMain ? 'h1' : 'h2',
+    } only %}
 {% endif %}

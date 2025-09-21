@@ -10,8 +10,7 @@ return [
     ],
     'fieldProfiles' => [
         'standard' => [
-            // 'title' => ['seoFields:settings.alternativeTitle', 'title'],
-            'title' => ['title'],
+            'title' => ['seoAltTitle', 'title'],
         ],
     ],
     'sitemapEnabled' => true,

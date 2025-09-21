@@ -1,0 +1,8 @@
+{% if block.singleLinkItem and block.singleLinkItem.url %}
+    {% include '_components/link-button' with {
+        label: block.singleLinkItem.label,
+        url: block.singleLinkItem.url,
+        target: block.singleLinkItem.target,
+        class: class ?? null,
+    } only %}
+{% endif %}

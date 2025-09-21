@@ -5,7 +5,7 @@
     <div class="l-main">
         <div class="l-outside-footer">
             {% include "_components/page-top" %}
-            {% set pageBuilderToTop = craft.app.urlManager.matchedElement['pageBuilderToTop'] ?? false %}
+            {% set pageBuilderToTop = pageBuilderToTop ?? false %}
             <div class="l-main-content {% if not pageBuilderToTop %}page-top__below{% endif %}">
                 {% block content %}{% endblock %}
             </div>
